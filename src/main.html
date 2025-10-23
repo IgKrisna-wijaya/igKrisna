@@ -1,0 +1,827 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css" rel="stylesheet" />
+  </head>
+<body>
+    <!-- atas -->
+    <!-- Include this script tag or install `@tailwindplus/elements` via npm: -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script> -->
+<div class="bg-white">
+  <!-- Mobile menu -->
+  <el-dialog>
+    <dialog id="mobile-menu" class="backdrop:bg-transparent lg:hidden">
+      <el-dialog-backdrop class="fixed inset-0 bg-black/25 transition-opacity duration-300 ease-linear data-closed:opacity-0"></el-dialog-backdrop>
+      <div tabindex="0" class="fixed inset-0 flex focus:outline-none">
+        <el-dialog-panel class="relative flex w-full max-w-xs transform flex-col overflow-y-auto bg-white pb-12 shadow-xl transition duration-300 ease-in-out data-closed:-translate-x-full">
+          <div class="flex px-4 pt-5 pb-2">
+            <button type="button" command="close" commandfor="mobile-menu" class="relative -m-2 inline-flex items-center justify-center rounded-md p-2 text-gray-400">
+              <span class="absolute -inset-0.5"></span>
+              <span class="sr-only">Close menu</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6">
+                <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+          </div>
+
+          <!-- Links -->
+          <el-tab-group class="mt-2 block">
+            <div class="border-b border-gray-200">
+              <el-tab-list class="-mb-px flex space-x-8 px-4">
+                <button class="flex-1 border-b-2 border-transparent px-1 py-4 text-base font-medium whitespace-nowrap text-gray-900 aria-selected:border-indigo-600 aria-selected:text-indigo-600">Women</button>
+                <button class="flex-1 border-b-2 border-transparent px-1 py-4 text-base font-medium whitespace-nowrap text-gray-900 aria-selected:border-indigo-600 aria-selected:text-indigo-600">Men</button>
+              </el-tab-list>
+            </div>
+            <el-tab-panels>
+              <div class="space-y-10 px-4 pt-10 pb-8">
+                <div class="grid grid-cols-2 gap-x-4">
+                  <div class="group relative text-sm">
+                    <img src="https://tailwindcss.com/plus-assets/img/ecommerce-images/mega-menu-category-01.jpg" alt="Models sitting back to back, wearing Basic Tee in black and bone." class="aspect-square w-full rounded-lg bg-gray-100 object-cover group-hover:opacity-75" />
+                    <a href="#" class="mt-6 block font-medium text-gray-900">
+                      <span aria-hidden="true" class="absolute inset-0 z-10"></span>
+                      New Arrivals
+                    </a>
+                    <p aria-hidden="true" class="mt-1">Shop now</p>
+                  </div>
+                  <div class="group relative text-sm">
+                    <img src="https://tailwindcss.com/plus-assets/img/ecommerce-images/mega-menu-category-02.jpg" alt="Close up of Basic Tee fall bundle with off-white, ochre, olive, and black tees." class="aspect-square w-full rounded-lg bg-gray-100 object-cover group-hover:opacity-75" />
+                    <a href="#" class="mt-6 block font-medium text-gray-900">
+                      <span aria-hidden="true" class="absolute inset-0 z-10"></span>
+                      Basic Tees
+                    </a>
+                    <p aria-hidden="true" class="mt-1">Shop now</p>
+                  </div>
+                </div>
+                <div>
+                  <p id="women-clothing-heading-mobile" class="font-medium text-gray-900">Clothing</p>
+                  <ul role="list" aria-labelledby="women-clothing-heading-mobile" class="mt-6 flex flex-col space-y-6">
+                    <li class="flow-root">
+                      <a href="#" class="-m-2 block p-2 text-gray-500">Tops</a>
+                    </li>
+                    <li class="flow-root">
+                      <a href="#" class="-m-2 block p-2 text-gray-500">Dresses</a>
+                    </li>
+                    <li class="flow-root">
+                      <a href="#" class="-m-2 block p-2 text-gray-500">Pants</a>
+                    </li>
+                    <li class="flow-root">
+                      <a href="#" class="-m-2 block p-2 text-gray-500">Denim</a>
+                    </li>
+                    <li class="flow-root">
+                      <a href="#" class="-m-2 block p-2 text-gray-500">Sweaters</a>
+                    </li>
+                    <li class="flow-root">
+                      <a href="#" class="-m-2 block p-2 text-gray-500">T-Shirts</a>
+                    </li>
+                    <li class="flow-root">
+                      <a href="#" class="-m-2 block p-2 text-gray-500">Jackets</a>
+                    </li>
+                    <li class="flow-root">
+                      <a href="#" class="-m-2 block p-2 text-gray-500">Activewear</a>
+                    </li>
+                    <li class="flow-root">
+                      <a href="#" class="-m-2 block p-2 text-gray-500">Browse All</a>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <p id="women-accessories-heading-mobile" class="font-medium text-gray-900">Accessories</p>
+                  <ul role="list" aria-labelledby="women-accessories-heading-mobile" class="mt-6 flex flex-col space-y-6">
+                    <li class="flow-root">
+                      <a href="#" class="-m-2 block p-2 text-gray-500">Watches</a>
+                    </li>
+                    <li class="flow-root">
+                      <a href="#" class="-m-2 block p-2 text-gray-500">Wallets</a>
+                    </li>
+                    <li class="flow-root">
+                      <a href="#" class="-m-2 block p-2 text-gray-500">Bags</a>
+                    </li>
+                    <li class="flow-root">
+                      <a href="#" class="-m-2 block p-2 text-gray-500">Sunglasses</a>
+                    </li>
+                    <li class="flow-root">
+                      <a href="#" class="-m-2 block p-2 text-gray-500">Hats</a>
+                    </li>
+                    <li class="flow-root">
+                      <a href="#" class="-m-2 block p-2 text-gray-500">Belts</a>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <p id="women-brands-heading-mobile" class="font-medium text-gray-900">Brands</p>
+                  <ul role="list" aria-labelledby="women-brands-heading-mobile" class="mt-6 flex flex-col space-y-6">
+                    <li class="flow-root">
+                      <a href="#" class="-m-2 block p-2 text-gray-500">Full Nelson</a>
+                    </li>
+                    <li class="flow-root">
+                      <a href="#" class="-m-2 block p-2 text-gray-500">My Way</a>
+                    </li>
+                    <li class="flow-root">
+                      <a href="#" class="-m-2 block p-2 text-gray-500">Re-Arranged</a>
+                    </li>
+                    <li class="flow-root">
+                      <a href="#" class="-m-2 block p-2 text-gray-500">Counterfeit</a>
+                    </li>
+                    <li class="flow-root">
+                      <a href="#" class="-m-2 block p-2 text-gray-500">Significant Other</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div hidden class="space-y-10 px-4 pt-10 pb-8">
+                <div class="grid grid-cols-2 gap-x-4">
+                  <div class="group relative text-sm">
+                    <img src="https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-04-detail-product-shot-01.jpg" alt="Drawstring top with elastic loop closure and textured interior padding." class="aspect-square w-full rounded-lg bg-gray-100 object-cover group-hover:opacity-75" />
+                    <a href="#" class="mt-6 block font-medium text-gray-900">
+                      <span aria-hidden="true" class="absolute inset-0 z-10"></span>
+                      New Arrivals
+                    </a>
+                    <p aria-hidden="true" class="mt-1">Shop now</p>
+                  </div>
+                  <div class="group relative text-sm">
+                    <img src="https://tailwindcss.com/plus-assets/img/ecommerce-images/category-page-02-image-card-06.jpg" alt="Three shirts in gray, white, and blue arranged on table with same line drawing of hands and shapes overlapping on front of shirt." class="aspect-square w-full rounded-lg bg-gray-100 object-cover group-hover:opacity-75" />
+                    <a href="#" class="mt-6 block font-medium text-gray-900">
+                      <span aria-hidden="true" class="absolute inset-0 z-10"></span>
+                      Artwork Tees
+                    </a>
+                    <p aria-hidden="true" class="mt-1">Shop now</p>
+                  </div>
+                </div>
+                <div>
+                  <p id="men-clothing-heading-mobile" class="font-medium text-gray-900">Clothing</p>
+                  <ul role="list" aria-labelledby="men-clothing-heading-mobile" class="mt-6 flex flex-col space-y-6">
+                    <li class="flow-root">
+                      <a href="#" class="-m-2 block p-2 text-gray-500">Tops</a>
+                    </li>
+                    <li class="flow-root">
+                      <a href="#" class="-m-2 block p-2 text-gray-500">Pants</a>
+                    </li>
+                    <li class="flow-root">
+                      <a href="#" class="-m-2 block p-2 text-gray-500">Sweaters</a>
+                    </li>
+                    <li class="flow-root">
+                      <a href="#" class="-m-2 block p-2 text-gray-500">T-Shirts</a>
+                    </li>
+                    <li class="flow-root">
+                      <a href="#" class="-m-2 block p-2 text-gray-500">Jackets</a>
+                    </li>
+                    <li class="flow-root">
+                      <a href="#" class="-m-2 block p-2 text-gray-500">Activewear</a>
+                    </li>
+                    <li class="flow-root">
+                      <a href="#" class="-m-2 block p-2 text-gray-500">Browse All</a>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <p id="men-accessories-heading-mobile" class="font-medium text-gray-900">Accessories</p>
+                  <ul role="list" aria-labelledby="men-accessories-heading-mobile" class="mt-6 flex flex-col space-y-6">
+                    <li class="flow-root">
+                      <a href="#" class="-m-2 block p-2 text-gray-500">Watches</a>
+                    </li>
+                    <li class="flow-root">
+                      <a href="#" class="-m-2 block p-2 text-gray-500">Wallets</a>
+                    </li>
+                    <li class="flow-root">
+                      <a href="#" class="-m-2 block p-2 text-gray-500">Bags</a>
+                    </li>
+                    <li class="flow-root">
+                      <a href="#" class="-m-2 block p-2 text-gray-500">Sunglasses</a>
+                    </li>
+                    <li class="flow-root">
+                      <a href="#" class="-m-2 block p-2 text-gray-500">Hats</a>
+                    </li>
+                    <li class="flow-root">
+                      <a href="#" class="-m-2 block p-2 text-gray-500">Belts</a>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <p id="men-brands-heading-mobile" class="font-medium text-gray-900">Brands</p>
+                  <ul role="list" aria-labelledby="men-brands-heading-mobile" class="mt-6 flex flex-col space-y-6">
+                    <li class="flow-root">
+                      <a href="#" class="-m-2 block p-2 text-gray-500">Re-Arranged</a>
+                    </li>
+                    <li class="flow-root">
+                      <a href="#" class="-m-2 block p-2 text-gray-500">Counterfeit</a>
+                    </li>
+                    <li class="flow-root">
+                      <a href="#" class="-m-2 block p-2 text-gray-500">Full Nelson</a>
+                    </li>
+                    <li class="flow-root">
+                      <a href="#" class="-m-2 block p-2 text-gray-500">My Way</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </el-tab-panels>
+          </el-tab-group>
+
+          <div class="space-y-6 border-t border-gray-200 px-4 py-6">
+            <div class="flow-root">
+              <a href="#" class="-m-2 block p-2 font-medium text-gray-900">Company</a>
+            </div>
+            <div class="flow-root">
+              <a href="#" class="-m-2 block p-2 font-medium text-gray-900">Stores</a>
+            </div>
+          </div>
+
+          <div class="space-y-6 border-t border-gray-200 px-4 py-6">
+          </div>
+
+          <div class="border-t border-gray-200 px-4 py-6">
+            <a href="#" class="-m-2 flex items-center p-2">
+              <img src="https://tailwindcss.com/plus-assets/img/flags/flag-canada.svg" alt="" class="block h-auto w-5 shrink-0" />
+              <span class="ml-3 block text-base font-medium text-gray-900">CAD</span>
+              <span class="sr-only">, change currency</span>
+            </a>
+          </div>
+        </el-dialog-panel>
+      </div>
+    </dialog>
+  </el-dialog>
+
+  <header class="relative bg-white">
+
+    <nav aria-label="Top" class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="border-b border-gray-200">
+        <div class="flex h-16 items-center">
+          <button type="button" command="show-modal" commandfor="mobile-menu" class="relative rounded-md bg-white p-2 text-gray-400 lg:hidden">
+            <span class="absolute -inset-0.5"></span>
+            <span class="sr-only">Open menu</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6">
+              <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+
+          <!-- Logo -->
+          <div class="ml-4 flex lg:ml-0">
+            <a href="#">
+              <span class="sr-only">Your Company</span>
+              <img src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600" alt="" class="h-8 w-auto" />
+            </a>
+          </div>
+
+          <!-- Flyout menus -->
+          <el-popover-group class="group/popover-group hidden lg:ml-8 lg:block lg:self-stretch">
+            <div class="flex h-full space-x-8">
+              <div class="group/popover flex">
+                <div class="relative flex">
+                  <button popovertarget="desktop-menu-women" class="relative flex items-center justify-center text-sm font-medium transition-colors duration-200 ease-out group-not-has-open/popover:text-gray-700 group-has-open/popover:text-indigo-600 group-not-has-open/popover:hover:text-gray-800">
+                    Women
+                    <span aria-hidden="true" class="absolute inset-x-0 -bottom-px z-30 h-0.5 bg-transparent duration-200 ease-in group-has-open/popover:bg-indigo-600 group-has-open/popover-group:duration-150 group-has-open/popover-group:ease-out"></span>
+                  </button>
+                </div>
+                <el-popover id="desktop-menu-women" anchor="bottom" popover class="w-full overflow-visible bg-white text-sm text-gray-500 transition transition-discrete [--anchor-gap:1px] backdrop:bg-transparent open:block data-closed:opacity-0 data-enter:duration-200 data-enter:ease-out data-leave:duration-150 data-leave:ease-in">
+                  <!-- Presentational element used to render the bottom shadow, if we put the shadow on the actual panel it pokes out the top, so we use this shorter element to hide the top of the shadow -->
+                  <div aria-hidden="true" class="absolute inset-0 top-1/2 bg-white shadow-sm"></div>
+                  <div class="relative bg-white">
+                    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                      <div class="grid grid-cols-2 gap-x-8 gap-y-10 py-16">
+                        <div class="col-start-2 grid grid-cols-2 gap-x-8">
+                          <div class="group relative text-base sm:text-sm">
+                            <img src="https://tailwindcss.com/plus-assets/img/ecommerce-images/mega-menu-category-01.jpg" alt="Models sitting back to back, wearing Basic Tee in black and bone." class="aspect-square w-full rounded-lg bg-gray-100 object-cover group-hover:opacity-75" />
+                            <a href="#" class="mt-6 block font-medium text-gray-900">
+                              <span aria-hidden="true" class="absolute inset-0 z-10"></span>
+                              New Arrivals
+                            </a>
+                            <p aria-hidden="true" class="mt-1">Shop now</p>
+                          </div>
+                          <div class="group relative text-base sm:text-sm">
+                            <img src="https://tailwindcss.com/plus-assets/img/ecommerce-images/mega-menu-category-02.jpg" alt="Close up of Basic Tee fall bundle with off-white, ochre, olive, and black tees." class="aspect-square w-full rounded-lg bg-gray-100 object-cover group-hover:opacity-75" />
+                            <a href="#" class="mt-6 block font-medium text-gray-900">
+                              <span aria-hidden="true" class="absolute inset-0 z-10"></span>
+                              Basic Tees
+                            </a>
+                            <p aria-hidden="true" class="mt-1">Shop now</p>
+                          </div>
+                        </div>
+                        <div class="row-start-1 grid grid-cols-3 gap-x-8 gap-y-10 text-sm">
+                          <div>
+                            <p id="Clothing-heading" class="font-medium text-gray-900">Clothing</p>
+                            <ul role="list" aria-labelledby="Clothing-heading" class="mt-6 space-y-6 sm:mt-4 sm:space-y-4">
+                              <li class="flex">
+                                <a href="#" class="hover:text-gray-800">Tops</a>
+                              </li>
+                              <li class="flex">
+                                <a href="#" class="hover:text-gray-800">Dresses</a>
+                              </li>
+                              <li class="flex">
+                                <a href="#" class="hover:text-gray-800">Pants</a>
+                              </li>
+                              <li class="flex">
+                                <a href="#" class="hover:text-gray-800">Denim</a>
+                              </li>
+                              <li class="flex">
+                                <a href="#" class="hover:text-gray-800">Sweaters</a>
+                              </li>
+                              <li class="flex">
+                                <a href="#" class="hover:text-gray-800">T-Shirts</a>
+                              </li>
+                              <li class="flex">
+                                <a href="#" class="hover:text-gray-800">Jackets</a>
+                              </li>
+                              <li class="flex">
+                                <a href="#" class="hover:text-gray-800">Activewear</a>
+                              </li>
+                              <li class="flex">
+                                <a href="#" class="hover:text-gray-800">Browse All</a>
+                              </li>
+                            </ul>
+                          </div>
+                          <div>
+                            <p id="Accessories-heading" class="font-medium text-gray-900">Accessories</p>
+                            <ul role="list" aria-labelledby="Accessories-heading" class="mt-6 space-y-6 sm:mt-4 sm:space-y-4">
+                              <li class="flex">
+                                <a href="#" class="hover:text-gray-800">Watches</a>
+                              </li>
+                              <li class="flex">
+                                <a href="#" class="hover:text-gray-800">Wallets</a>
+                              </li>
+                              <li class="flex">
+                                <a href="#" class="hover:text-gray-800">Bags</a>
+                              </li>
+                              <li class="flex">
+                                <a href="#" class="hover:text-gray-800">Sunglasses</a>
+                              </li>
+                              <li class="flex">
+                                <a href="#" class="hover:text-gray-800">Hats</a>
+                              </li>
+                              <li class="flex">
+                                <a href="#" class="hover:text-gray-800">Belts</a>
+                              </li>
+                            </ul>
+                          </div>
+                          <div>
+                            <p id="Brands-heading" class="font-medium text-gray-900">Brands</p>
+                            <ul role="list" aria-labelledby="Brands-heading" class="mt-6 space-y-6 sm:mt-4 sm:space-y-4">
+                              <li class="flex">
+                                <a href="#" class="hover:text-gray-800">Full Nelson</a>
+                              </li>
+                              <li class="flex">
+                                <a href="#" class="hover:text-gray-800">My Way</a>
+                              </li>
+                              <li class="flex">
+                                <a href="#" class="hover:text-gray-800">Re-Arranged</a>
+                              </li>
+                              <li class="flex">
+                                <a href="#" class="hover:text-gray-800">Counterfeit</a>
+                              </li>
+                              <li class="flex">
+                                <a href="#" class="hover:text-gray-800">Significant Other</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </el-popover>
+              </div>
+              <div class="group/popover flex">
+                <div class="relative flex">
+                  <button popovertarget="desktop-menu-men" class="relative flex items-center justify-center text-sm font-medium transition-colors duration-200 ease-out group-not-has-open/popover:text-gray-700 group-has-open/popover:text-indigo-600 group-not-has-open/popover:hover:text-gray-800">
+                    Men
+                    <span aria-hidden="true" class="absolute inset-x-0 -bottom-px z-30 h-0.5 bg-transparent duration-200 ease-in group-has-open/popover:bg-indigo-600 group-has-open/popover-group:duration-150 group-has-open/popover-group:ease-out"></span>
+                  </button>
+                </div>
+                <el-popover id="desktop-menu-men" anchor="bottom" popover class="w-full overflow-visible bg-white text-sm text-gray-500 transition transition-discrete [--anchor-gap:1px] backdrop:bg-transparent open:block data-closed:opacity-0 data-enter:duration-200 data-enter:ease-out data-leave:duration-150 data-leave:ease-in">
+                  <!-- Presentational element used to render the bottom shadow, if we put the shadow on the actual panel it pokes out the top, so we use this shorter element to hide the top of the shadow -->
+                  <div aria-hidden="true" class="absolute inset-0 top-1/2 bg-white shadow-sm"></div>
+                  <div class="relative bg-white">
+                    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                      <div class="grid grid-cols-2 gap-x-8 gap-y-10 py-16">
+                        <div class="col-start-2 grid grid-cols-2 gap-x-8">
+                          <div class="group relative text-base sm:text-sm">
+                            <img src="https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-04-detail-product-shot-01.jpg" alt="Drawstring top with elastic loop closure and textured interior padding." class="aspect-square w-full rounded-lg bg-gray-100 object-cover group-hover:opacity-75" />
+                            <a href="#" class="mt-6 block font-medium text-gray-900">
+                              <span aria-hidden="true" class="absolute inset-0 z-10"></span>
+                              New Arrivals
+                            </a>
+                            <p aria-hidden="true" class="mt-1">Shop now</p>
+                          </div>
+                          <div class="group relative text-base sm:text-sm">
+                            <img src="https://tailwindcss.com/plus-assets/img/ecommerce-images/category-page-02-image-card-06.jpg" alt="Three shirts in gray, white, and blue arranged on table with same line drawing of hands and shapes overlapping on front of shirt." class="aspect-square w-full rounded-lg bg-gray-100 object-cover group-hover:opacity-75" />
+                            <a href="#" class="mt-6 block font-medium text-gray-900">
+                              <span aria-hidden="true" class="absolute inset-0 z-10"></span>
+                              Artwork Tees
+                            </a>
+                            <p aria-hidden="true" class="mt-1">Shop now</p>
+                          </div>
+                        </div>
+                        <div class="row-start-1 grid grid-cols-3 gap-x-8 gap-y-10 text-sm">
+                          <div>
+                            <p id="Clothing-heading" class="font-medium text-gray-900">Clothing</p>
+                            <ul role="list" aria-labelledby="Clothing-heading" class="mt-6 space-y-6 sm:mt-4 sm:space-y-4">
+                              <li class="flex">
+                                <a href="#" class="hover:text-gray-800">Tops</a>
+                              </li>
+                              <li class="flex">
+                                <a href="#" class="hover:text-gray-800">Pants</a>
+                              </li>
+                              <li class="flex">
+                                <a href="#" class="hover:text-gray-800">Sweaters</a>
+                              </li>
+                              <li class="flex">
+                                <a href="#" class="hover:text-gray-800">T-Shirts</a>
+                              </li>
+                              <li class="flex">
+                                <a href="#" class="hover:text-gray-800">Jackets</a>
+                              </li>
+                              <li class="flex">
+                                <a href="#" class="hover:text-gray-800">Activewear</a>
+                              </li>
+                              <li class="flex">
+                                <a href="#" class="hover:text-gray-800">Browse All</a>
+                              </li>
+                            </ul>
+                          </div>
+                          <div>
+                            <p id="Accessories-heading" class="font-medium text-gray-900">Accessories</p>
+                            <ul role="list" aria-labelledby="Accessories-heading" class="mt-6 space-y-6 sm:mt-4 sm:space-y-4">
+                              <li class="flex">
+                                <a href="#" class="hover:text-gray-800">Watches</a>
+                              </li>
+                              <li class="flex">
+                                <a href="#" class="hover:text-gray-800">Wallets</a>
+                              </li>
+                              <li class="flex">
+                                <a href="#" class="hover:text-gray-800">Bags</a>
+                              </li>
+                              <li class="flex">
+                                <a href="#" class="hover:text-gray-800">Sunglasses</a>
+                              </li>
+                              <li class="flex">
+                                <a href="#" class="hover:text-gray-800">Hats</a>
+                              </li>
+                              <li class="flex">
+                                <a href="#" class="hover:text-gray-800">Belts</a>
+                              </li>
+                            </ul>
+                          </div>
+                          <div>
+                            <p id="Brands-heading" class="font-medium text-gray-900">Brands</p>
+                            <ul role="list" aria-labelledby="Brands-heading" class="mt-6 space-y-6 sm:mt-4 sm:space-y-4">
+                              <li class="flex">
+                                <a href="#" class="hover:text-gray-800">Re-Arranged</a>
+                              </li>
+                              <li class="flex">
+                                <a href="#" class="hover:text-gray-800">Counterfeit</a>
+                              </li>
+                              <li class="flex">
+                                <a href="#" class="hover:text-gray-800">Full Nelson</a>
+                              </li>
+                              <li class="flex">
+                                <a href="#" class="hover:text-gray-800">My Way</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </el-popover>
+              </div>
+
+              <a href="#" class="flex items-center text-sm font-medium text-gray-700 hover:text-gray-800">Company</a>
+              <a href="#" class="flex items-center text-sm font-medium text-gray-700 hover:text-gray-800">Stores</a>
+            </div>
+          </el-popover-group>
+
+          <div class="ml-auto flex items-center">
+
+            <!-- Search -->
+            <div class="flex lg:ml-6">
+              <a href="#" class="p-2 text-gray-400 hover:text-gray-500">
+                <span class="sr-only">Search</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6">
+                  <path d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+            </div>
+
+            <!-- Cart -->
+            <div class="ml-4 flow-root lg:ml-6">
+              <button command="show-modal" commandfor="drawer" 
+        class="group -m-2 flex items-center p-2">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+       aria-hidden="true" class="size-6 shrink-0 text-gray-400 group-hover:text-gray-500">
+    <path d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 
+             1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 
+             1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 
+             5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007Z" 
+          stroke-linecap="round" stroke-linejoin="round" />
+  </svg>
+  <span id="total-barang" class="ml-2 text-sm font-medium text-gray-700 group-hover:text-gray-800">0</span>
+  <span class="sr-only">items in cart, view bag</span>
+</button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+</div>
+  <!-- Promo -->
+   <div>
+  <div id="promo-carousel" class="relative w-full mt-4" data-carousel="slide">
+  <!-- Wrapper -->
+  <div class="relative h-40 sm:h-56 md:h-72 lg:h-80 xl:h-96 overflow-hidden rounded-xl">
+    <!-- Slide 1 -->
+    <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+      <img src="./image/banner1.png" class="absolute block w-full h-full object-cover object-center" alt="Promo 1">
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+      <img src="./image/banner2.png" class="absolute block w-full h-full object-cover object-center" alt="Promo 2">
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+      <img src="./image/banner3.png" class="absolute block w-full h-full object-cover object-center" alt="Promo 3">
+    </div>
+  </div>
+
+  <!-- Tombol navigasi -->
+  <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group" data-carousel-prev>
+    <span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-black/30 group-hover:bg-black/50">
+      <svg class="w-4 h-4 text-white" aria-hidden="true" fill="none" viewBox="0 0 6 10">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+      </svg>
+    </span>
+  </button>
+
+  <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group" data-carousel-next>
+    <span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-black/30 group-hover:bg-black/50">
+      <svg class="w-4 h-4 text-white" aria-hidden="true" fill="none" viewBox="0 0 6 10">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+      </svg>
+    </span>
+  </button>
+
+  <!-- Indikator bawah -->
+  <div class="absolute z-30 flex -translate-x-1/2 bottom-3 left-1/2 space-x-2">
+    <button type="button" class="w-2 h-2 rounded-full bg-white/60" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+    <button type="button" class="w-2 h-2 rounded-full bg-white/60" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+    <button type="button" class="w-2 h-2 rounded-full bg-white/60" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+  </div>
+</div>
+  </div>
+
+  <!-- Tombol kontrol -->
+  <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+      <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50">
+          <svg class="w-4 h-4 text-white" aria-hidden="true" fill="none" viewBox="0 0 6 10"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/></svg>
+      </span>
+  </button>
+  <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+      <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50">
+          <svg class="w-4 h-4 text-white" aria-hidden="true" fill="none" viewBox="0 0 6 10"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/></svg>
+      </span>
+  </button>
+</div>
+   </div>
+    <!-- Item -->
+     <div class="bg-gray-200" id="product-list">
+  <div class="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
+    <h2 class="sr-only">Products</h2>
+
+    <div class="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
+      <a href="item1.html" class="group">
+        <img src="https://tailwindcss.com/plus-assets/img/ecommerce-images/product-quick-preview-02-detail.jpg" alt="Tall slender porcelain bottle with natural clay textured body and cork stopper." class="aspect-square w-full rounded-lg bg-gray-200 object-cover group-hover:opacity-75 xl:aspect-7/8" />
+        <h3 class="mt-4 text-sm text-gray-700">Kaos</h3>
+        <p class="mt-1 text-lg font-medium text-gray-900">Rp.40000</p>
+      </a>
+      <a href="item2.html" class="group">
+        <img src="https://cardinal.co.id/cdn/shop/files/WCNCL01468F_06E_1.jpg?v=1754357296" alt="Olive drab green insulated bottle with flared screw lid and flat top." class="aspect-square w-full rounded-lg bg-gray-200 object-cover group-hover:opacity-75 xl:aspect-7/8" />
+        <h3 class="mt-4 text-sm text-gray-700">Sepatu</h3>
+        <p class="mt-1 text-lg font-medium text-gray-900">Rp.100000</p>
+      </a>
+      <a href="item3.html" class="group">
+        <img src="https://id-test-11.slatic.net/p/4b65966fa1fa6d5ba6cfa39a64218890.jpg" alt="Person using a pen to cross a task off a productivity paper card." class="aspect-square w-full rounded-lg bg-gray-200 object-cover group-hover:opacity-75 xl:aspect-7/8" />
+        <h3 class="mt-4 text-sm text-gray-700">Celana Pendek</h3>
+        <p class="mt-1 text-lg font-medium text-gray-900">Rp.25000</p>
+      </a>
+      <a href="item4.html" class="group">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDfAT2iswVDazAM-dxPIFZV8RhgVL_gDryyw&s" alt="Person using a pen to cross a task off a productivity paper card." class="aspect-square w-full rounded-lg bg-gray-200 object-cover group-hover:opacity-75 xl:aspect-7/8" />
+        <h3 class="mt-4 text-sm text-gray-700">Celana Jeans</h3>
+        <p class="mt-1 text-lg font-medium text-gray-900">Rp.150000</p>
+      </a>
+      
+    </div>
+  </div>
+</div>
+<!-- detail -->
+<!-- <button type="button" onclick="alert('tekan')" command="show-modal" commandfor="dialog-1" class="relative z-10 w-full rounded-md bg-white/75 px-4 py-2 text-sm text-gray-900 opacity-0 group-hover:opacity-100 focus:opacity-100" aria-expanded="false">Quick View<span class="sr-only">, Basic Tee 6-Pack</span></button> -->
+<el-dialog>
+  <dialog id="modal" class="relative z-10 backdrop:bg-transparent">
+    <el-dialog-backdrop class="fixed inset-0 hidden bg-gray-500/75 transition-opacity data-closed:opacity-0 data-enter:duration-300 data-enter:ease-out data-leave:duration-200 data-leave:ease-in md:block"></el-dialog-backdrop>
+
+    <div tabindex="0" class="fixed inset-0 z-10 w-screen overflow-y-auto focus:outline-none">
+      <div class="flex min-h-full items-stretch justify-center text-center md:items-center md:px-2 lg:px-4">
+        <!-- Modal panel, show/hide based on modal state. -->
+        <el-dialog-panel class="flex w-full transform text-left text-base transition data-closed:translate-y-4 data-closed:opacity-0 data-enter:duration-300 data-enter:ease-out data-leave:duration-200 data-leave:ease-in md:my-8 md:max-w-2xl md:px-4 data-closed:md:translate-y-0 data-closed:md:scale-95 lg:max-w-4xl">
+          <div class="relative flex w-full items-center overflow-hidden bg-white px-4 pt-14 pb-8 shadow-2xl sm:px-6 sm:pt-8 md:p-6 lg:p-8">
+            <button type="button" command="close" commandfor="modal" class="absolute top-4 right-4 text-gray-400 hover:text-gray-500 sm:top-8 sm:right-6 md:top-6 md:right-6 lg:top-8 lg:right-8">
+              <span class="sr-only">Close</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6">
+                <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+
+            <div class="grid w-full grid-cols-1 items-start gap-x-6 gap-y-8 sm:grid-cols-12 lg:gap-x-8">
+              <img src="https://tailwindcss.com/plus-assets/img/ecommerce-images/product-quick-preview-02-detail.jpg" alt="Two each of gray, white, and black shirts arranged on table." class="aspect-2/3 w-full rounded-lg bg-gray-100 object-cover sm:col-span-4 lg:col-span-5" />
+              <div class="sm:col-span-8 lg:col-span-7">
+                <h2 class="text-2xl font-bold text-gray-900 sm:pr-12">Basic Tee 6-Pack</h2>
+
+                <section aria-labelledby="information-heading" class="mt-2">
+                  <h3 id="information-heading" class="sr-only">Product information</h3>
+
+                  <p class="text-2xl text-gray-900">$192</p>
+
+                  <!-- Reviews -->
+                  <div class="mt-6">
+                    <h4 class="sr-only">Reviews</h4>
+                    <div class="flex items-center">
+                      <div class="flex items-center">
+                        <!-- Active: "text-gray-900", Default: "text-gray-200" -->
+                        <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="size-5 shrink-0 text-gray-900">
+                          <path d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z" clip-rule="evenodd" fill-rule="evenodd" />
+                        </svg>
+                        <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="size-5 shrink-0 text-gray-900">
+                          <path d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z" clip-rule="evenodd" fill-rule="evenodd" />
+                        </svg>
+                        <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="size-5 shrink-0 text-gray-900">
+                          <path d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z" clip-rule="evenodd" fill-rule="evenodd" />
+                        </svg>
+                        <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="size-5 shrink-0 text-gray-900">
+                          <path d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z" clip-rule="evenodd" fill-rule="evenodd" />
+                        </svg>
+                        <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="size-5 shrink-0 text-gray-200">
+                          <path d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z" clip-rule="evenodd" fill-rule="evenodd" />
+                        </svg>
+                      </div>
+                      <p class="sr-only">3.9 out of 5 stars</p>
+                      <a href="#" class="ml-3 text-sm font-medium text-indigo-600 hover:text-indigo-500">117 reviews</a>
+                    </div>
+                  </div>
+                </section>
+
+                <section aria-labelledby="options-heading" class="mt-10">
+                  <h3 id="options-heading" class="sr-only">Product options</h3>
+
+                  <form>
+                    <!-- Colors -->
+                    <fieldset aria-label="Choose a color">
+                      <legend class="text-sm font-medium text-gray-900">Color</legend>
+
+                      <div class="mt-4 flex items-center gap-x-3">
+                        <div class="flex rounded-full outline -outline-offset-1 outline-black/10">
+                          <input type="radio" name="color" value="white" checked aria-label="White" class="size-8 appearance-none rounded-full bg-white forced-color-adjust-none checked:outline-2 checked:outline-offset-2 checked:outline-gray-400 focus-visible:outline-3 focus-visible:outline-offset-3" />
+                        </div>
+                        <div class="flex rounded-full outline -outline-offset-1 outline-black/10">
+                          <input type="radio" name="color" value="gray" aria-label="Gray" class="size-8 appearance-none rounded-full bg-gray-200 forced-color-adjust-none checked:outline-2 checked:outline-offset-2 checked:outline-gray-400 focus-visible:outline-3 focus-visible:outline-offset-3" />
+                        </div>
+                        <div class="flex rounded-full outline -outline-offset-1 outline-black/10">
+                          <input type="radio" name="color" value="black" aria-label="Black" class="size-8 appearance-none rounded-full bg-gray-900 forced-color-adjust-none checked:outline-2 checked:outline-offset-2 checked:outline-gray-900 focus-visible:outline-3 focus-visible:outline-offset-3" />
+                        </div>
+                      </div>
+                    </fieldset>
+
+                    <!-- Sizes -->
+                    <fieldset aria-label="Choose a size" class="mt-10">
+                      <div class="flex items-center justify-between">
+                        <div class="text-sm font-medium text-gray-900">Size</div>
+                        <a href="#" class="text-sm font-medium text-indigo-600 hover:text-indigo-500">Size guide</a>
+                      </div>
+
+                      <div class="mt-2 grid grid-cols-4 gap-3">
+                        <label aria-label="XXS" class="group relative flex items-center justify-center rounded-md border border-gray-300 bg-white p-3 has-checked:border-indigo-600 has-checked:bg-indigo-600 has-focus-visible:outline-2 has-focus-visible:outline-offset-2 has-focus-visible:outline-indigo-600 has-disabled:border-gray-400 has-disabled:bg-gray-200 has-disabled:opacity-25">
+                          <input type="radio" name="size" class="absolute inset-0 appearance-none focus:outline-none disabled:cursor-not-allowed" />
+                          <span class="text-sm font-medium text-gray-900 uppercase group-has-checked:text-white">XXS</span>
+                        </label>
+                        <label aria-label="XS" class="group relative flex items-center justify-center rounded-md border border-gray-300 bg-white p-3 has-checked:border-indigo-600 has-checked:bg-indigo-600 has-focus-visible:outline-2 has-focus-visible:outline-offset-2 has-focus-visible:outline-indigo-600 has-disabled:border-gray-400 has-disabled:bg-gray-200 has-disabled:opacity-25">
+                          <input type="radio" name="size" class="absolute inset-0 appearance-none focus:outline-none disabled:cursor-not-allowed" />
+                          <span class="text-sm font-medium text-gray-900 uppercase group-has-checked:text-white">XS</span>
+                        </label>
+                        <label aria-label="S" class="group relative flex items-center justify-center rounded-md border border-gray-300 bg-white p-3 has-checked:border-indigo-600 has-checked:bg-indigo-600 has-focus-visible:outline-2 has-focus-visible:outline-offset-2 has-focus-visible:outline-indigo-600 has-disabled:border-gray-400 has-disabled:bg-gray-200 has-disabled:opacity-25">
+                          <input type="radio" name="size" checked class="absolute inset-0 appearance-none focus:outline-none disabled:cursor-not-allowed" />
+                          <span class="text-sm font-medium text-gray-900 uppercase group-has-checked:text-white">S</span>
+                        </label>
+                        <label aria-label="M" class="group relative flex items-center justify-center rounded-md border border-gray-300 bg-white p-3 has-checked:border-indigo-600 has-checked:bg-indigo-600 has-focus-visible:outline-2 has-focus-visible:outline-offset-2 has-focus-visible:outline-indigo-600 has-disabled:border-gray-400 has-disabled:bg-gray-200 has-disabled:opacity-25">
+                          <input type="radio" name="size" class="absolute inset-0 appearance-none focus:outline-none disabled:cursor-not-allowed" />
+                          <span class="text-sm font-medium text-gray-900 uppercase group-has-checked:text-white">M</span>
+                        </label>
+                        <label aria-label="L" class="group relative flex items-center justify-center rounded-md border border-gray-300 bg-white p-3 has-checked:border-indigo-600 has-checked:bg-indigo-600 has-focus-visible:outline-2 has-focus-visible:outline-offset-2 has-focus-visible:outline-indigo-600 has-disabled:border-gray-400 has-disabled:bg-gray-200 has-disabled:opacity-25">
+                          <input type="radio" name="size" class="absolute inset-0 appearance-none focus:outline-none disabled:cursor-not-allowed" />
+                          <span class="text-sm font-medium text-gray-900 uppercase group-has-checked:text-white">L</span>
+                        </label>
+                        <label aria-label="XL" class="group relative flex items-center justify-center rounded-md border border-gray-300 bg-white p-3 has-checked:border-indigo-600 has-checked:bg-indigo-600 has-focus-visible:outline-2 has-focus-visible:outline-offset-2 has-focus-visible:outline-indigo-600 has-disabled:border-gray-400 has-disabled:bg-gray-200 has-disabled:opacity-25">
+                          <input type="radio" name="size" class="absolute inset-0 appearance-none focus:outline-none disabled:cursor-not-allowed" />
+                          <span class="text-sm font-medium text-gray-900 uppercase group-has-checked:text-white">XL</span>
+                        </label>
+                        <label aria-label="XXL" class="group relative flex items-center justify-center rounded-md border border-gray-300 bg-white p-3 has-checked:border-indigo-600 has-checked:bg-indigo-600 has-focus-visible:outline-2 has-focus-visible:outline-offset-2 has-focus-visible:outline-indigo-600 has-disabled:border-gray-400 has-disabled:bg-gray-200 has-disabled:opacity-25">
+                          <input type="radio" name="size" class="absolute inset-0 appearance-none focus:outline-none disabled:cursor-not-allowed" />
+                          <span class="text-sm font-medium text-gray-900 uppercase group-has-checked:text-white">XXL</span>
+                        </label>
+                        <label aria-label="XXXL" class="group relative flex items-center justify-center rounded-md border border-gray-300 bg-white p-3 has-checked:border-indigo-600 has-checked:bg-indigo-600 has-focus-visible:outline-2 has-focus-visible:outline-offset-2 has-focus-visible:outline-indigo-600 has-disabled:border-gray-400 has-disabled:bg-gray-200 has-disabled:opacity-25">
+                          <input type="radio" name="size" disabled class="absolute inset-0 appearance-none focus:outline-none disabled:cursor-not-allowed" />
+                          <span class="text-sm font-medium text-gray-900 uppercase group-has-checked:text-white">XXXL</span>
+                        </label>
+                      </div>
+                    </fieldset>
+
+                    <button type="submit" class="mt-6 flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-base font-medium text-white hover:bg-indigo-700 focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:outline-hidden">Add to bag</button>
+                  </form>
+                </section>
+              </div>
+            </div>
+          </div>
+        </el-dialog-panel>
+      </div>
+    </div>
+  </dialog>
+</el-dialog>
+
+<!-- Cart -->
+ <div>
+  <!-- Include this script tag or install `@tailwindplus/elements` via npm: -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script> -->
+<!-- <button command="show-modal" commandfor="drawer" class="rounded-md bg-gray-950/5 px-2.5 py-1.5 text-sm font-semibold text-gray-900 hover:bg-gray-950/10">Open drawer</button> -->
+<el-dialog>
+  <dialog id="drawer" aria-labelledby="drawer-title" class="fixed inset-0 size-auto max-h-none max-w-none overflow-hidden bg-transparent not-open:hidden backdrop:bg-transparent">
+    <el-dialog-backdrop class="absolute inset-0 bg-gray-500/75 transition-opacity duration-500 ease-in-out data-closed:opacity-0"></el-dialog-backdrop>
+
+    <div tabindex="0" class="absolute inset-0 pl-10 focus:outline-none sm:pl-16">
+      <el-dialog-panel class="ml-auto block size-full max-w-md transform transition duration-500 ease-in-out data-closed:translate-x-full sm:duration-700">
+        <div class="flex h-full flex-col overflow-y-auto bg-white shadow-xl">
+          <div class="flex-1 overflow-y-auto px-4 py-6 sm:px-6">
+            <div class="flex items-start justify-between">
+              <h2 id="drawer-title" class="text-lg font-medium text-gray-900">Shopping cart</h2>
+              <div class="ml-3 flex h-7 items-center">
+                <button type="button" command="close" commandfor="drawer" class="relative -m-2 p-2 text-gray-400 hover:text-gray-500">
+                  <span class="absolute -inset-0.5"></span>
+                  <span class="sr-only">Close panel</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6">
+                    <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <div class="mt-8">
+              <div class="flow-root">
+                <ul id="cart-items" role="list" class="-my-6 divide-y divide-gray-200">
+
+                </ul>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="border-t border-gray-200 px-4 py-6 sm:px-6">
+            <div class="flex justify-between text-base font-medium text-gray-900">
+              <p>Subtotal</p>
+              <p id="total-harga">Rp0</p>
+            </div>
+            <p class="mt-0.5 text-sm text-gray-500">Shipping and taxes calculated at checkout.</p>
+            <div class="mt-6">
+              <a href="cekout.html" class="flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-6 py-3 text-base font-medium text-white shadow-xs hover:bg-indigo-700">Checkout</a>
+            </div>
+            <div class="mt-6 flex justify-center text-center text-sm text-gray-500">
+              <p>
+                or
+                <button type="button" command="close" commandfor="drawer" class="font-medium text-indigo-600 hover:text-indigo-500">
+                  Continue Shopping
+                  <span aria-hidden="true"> &rarr;</span>
+                </button>
+              </p>
+            </div>
+          </div>
+        </div>
+      </el-dialog-panel>
+    </div>
+  </dialog>
+</el-dialog>
+ </div>
+ <!-- <button onclick="lihatCart()">Yo</button>
+ <button onclick="hapusCart()">Yop</button> -->
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+  tampilkanCart();
+  hitungTotalHarga();
+  hitungTotalBarang();
+});
+</script>
+<script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+
+
+</body>
+</html>
