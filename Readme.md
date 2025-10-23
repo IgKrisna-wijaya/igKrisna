@@ -15,7 +15,7 @@ Teknologi yang Digunakan
 - Frontend: HTML, CSS, TailwindCSS, JavaScript 
 Seharusnya ada folder berisi framework dari tailwind, tapi saya tidak tau cara uploadnya untuk lebih dari 100 file
 
-![Menu](./scr/image/Menu.png)
-![Item](./scr/image/Item.png)
-![Cekout](./scr/image/cekout.png)
-![berhasil](./scr/image/berhasil.png)
+![Menu](./src/image/Menu.png)
+![Item](./src/image/Item.png)
+![cekout](./src/image/cekout.png)
+![berhasil](./src/image/berhasil.png)
