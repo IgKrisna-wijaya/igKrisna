@@ -12,4 +12,7 @@ Fitur
 
 ---
 Teknologi yang Digunakan
-- Frontend: HTML, CSS, TailwindCSS, JavaScript 
+
+- Frontend: HTML, CSS, TailwindCSS, JavaScript
+
+  Seharusnya ada folder berisi framework dari tailwind, tapi saya tidak tau cara uploadnya untuk lebih dari 100 file
